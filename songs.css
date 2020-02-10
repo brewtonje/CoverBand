@@ -1,17 +1,43 @@
 SETLIST { 
-     color: white; 
-     background-color : gray; 
+     color: #ff70ee; 
+	 animation-name: rainbow;
+  	 animation-duration: 7s;
+	 animation-iteration-count:infinite;
      width: 100%; 
+	 text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 } 
+@keyframes rainbow {
+  0% {background-color:#e2bdff;}
+  50% {background-color:#d1ffdd;}
+  100% {background-color:#e2bdff;}
+}
  HEADING { 
-     color: green; 
-     font-size : 40px; 
-     background-color : powderblue; 
+     color: white; 
+	 text-align: center;
+     font-size : 50px; 
+     background-color : black; 
+	 font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	 padding: 22px;
+	 width: 100%;
+	 text-shadow: 0 0 30px #ff70ee;
 } 
  HEADING, TITLE, ARTIST, GENRE, YEAR { 
      display : block; 
 } 
  TITLE { 
-     font-size : 25px; 
+     font-size : 30px; 
      font-weight : bold; 
+	 text-decoration: underline;
+	 padding-top: 15px;
 } 
+ARTIST, GENRE, YEAR {
+	color: black;
+}
+YEAR {
+	font-style: italic;
+	font-size: 8pt;
+}
+ARTIST {
+	font-size: 15pt;
+}
